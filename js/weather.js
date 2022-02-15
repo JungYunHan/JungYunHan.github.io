@@ -15,7 +15,7 @@ function onGeoSuccess(position) {
 }
 
 function onGeoError() {
-  alert("Can't find you. No weather for you.");
+  alert("Please allow me to provide the weather.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
