@@ -38,8 +38,12 @@ function handleToDoSubmit(event) {
     text: newTodo,
     id: Date.now(),
   };
+  if (toDos.length < 5) {
   toDos.push(newTodoObj);
   paintToDo(newTodoObj);
+  } else {
+    alert("Up to five to-do lists can be entered.")
+  }
   saveToDos();
 }
 

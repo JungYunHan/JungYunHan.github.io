@@ -15,8 +15,9 @@ html {
 
 #weather {
   display: grid;
-  margin: 5px;
+  margin: 10px;
   height: 5vh;
+  font-size: 20px;
   justify-content: right; 
   color: aliceblue;
 }
@@ -73,4 +74,36 @@ html {
 
 #login-form input:last-child{
   display: none;
+}
+
+#todo span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#todo input{
+  width:300px;
+  height:35px;
+  border-radius:7px;
+  font-size: 30px;
+  color: #fff;
+  background-color:hsla(0,0%,100%,.5);
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+
+#todo-list button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:30px;
+  height:30px;
+  border-radius:5px;
+  background-color: hsl(350, 100%, 88%, .8);
 }
